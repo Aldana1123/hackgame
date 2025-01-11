@@ -1,0 +1,364 @@
+/*all pages*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*home page*/
+
+/*image slider css*/
+.slider{
+  height: 273px;
+  position: relative;
+  width: 460px;
+  display: block;
+  margin: 20px 0.5em ;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.slider-inside{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+
+}
+.slider-inside img{
+  height: 273px;
+  width: 100%;
+  display: none;
+  object-fit: cover;
+  border-radius: 15px;
+  text-align: center;
+}
+.slider-inside img.active{
+  display: inline-block;
+  object-fit: cover;
+  
+}
+.prev, .next{
+  float: left;
+  margin-top: 25%;
+  cursor: pointer;
+}
+.prev{
+  position: absolute;
+  margin-left: 10px;
+  z-index: 100;
+  height: 20px;
+  width: auto;
+}
+.next{
+  position: absolute;
+  margin-left: 430px;
+  z-index: 100;
+  height: 20px;
+  width: auto;
+  transform: rotate(-180deg);
+}
+
+/*home boxs and navigation bar*/
+
+.navbarh{
+  height: 50px;
+
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.navbarb ul li a{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+h2{
+  margin-left: 0.5em;
+}
+h3{
+  margin-left: 0.5em;
+  font-size: 17px;
+}
+.subheading{
+  margin-left: 0.5em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+.homebox{
+  margin: auto;
+  padding: 10px;
+  height: 100px;
+  width: 220px;
+  border-radius: 9px;
+  border:none;
+}
+.homebox a{
+  text-decoration: none;
+}
+.homebox img{
+  width: 100%;
+  height: 110px;
+  border-radius: 9px;
+  object-fit: cover;
+}
+.homebox .infopart{
+  position: relative;
+  bottom: 100px;
+  padding-left: 1em;
+}
+.homebox .infopart h3{
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin:5px;
+  color:#F3F9F7; 
+  text-transform: uppercase; 
+}
+.homebox .infopart p{
+  color:#F3F9F7;
+  margin:5px;
+  font-weight: 300;
+}
+ul{
+  margin-left: 1em;
+}
+
+/*categories box*/
+
+.des-box{
+  margin: auto;
+  padding: 10px;
+  height: 260px;
+  width: 200px;
+  border-radius: 5px;
+}
+.des-box a{
+  text-decoration: none;
+}
+.des-box img{
+  width: 100%;
+  height: 230px;
+  border-radius: 5px;
+}
+.subhed{
+  position: absolute;
+  padding: 0.5em 1em 4em 1em;
+  height: auto;
+  top: 10%;
+  left: 0;
+  right: 0;
+  width: auto;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #232323;
+}
+.subhed h2{
+  font-size: 20px; 
+}
+.header-color{
+  width: 100%; 
+  height: 100px;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  background-color: #6e6e6e;
+}
+.header-color h2{
+  color: #fff;
+  font-weight: 400;
+  left: 20px;
+  padding-left: 1.5em;
+  top: 1em;
+}
+.back-button{
+  margin-left: 10px;
+  margin-top: 9px;
+  position: relative;
+}
+.buy-button p{
+  width: 95%;
+background-color:rgb(66, 101, 255) ;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.buynowbutton p{
+  width: 95%;
+  background-color:rgb(144, 144, 144) ;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+  font-family: 'Franklin Gothic Medium';
+}
+
+/*search page*/
+
+.filterDiv {
+  background-color: #2196F3;
+  color: #ffffff;
+  width: auto;
+  text-align: left;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  display: none;
+  padding: 1em;
+  height: 50px;
+}
+.circle-image{
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.circle-image img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.view {
+  display: block;
+}
+.search {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.category{
+  display: none;
+}
+
+/*platforms page*/
+
+.box{
+  width: 99%;
+  border-radius: 15px;
+  margin-top: 1em;
+}
+.box_frame{
+  text-align: left;
+  position: relative;
+  padding: 5em;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+}
+.box:active .box_frame{
+  transform: rotateY(.3turn);
+}
+.platform{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 15px;
+}
+.platform .box-info{
+  position: absolute;
+  padding: 1em;
+}
+.platform .box-info p{
+  color: #F3F9F7;
+  margin-top: 110px;
+}
+.box_frame .platform img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/*setting page*/
+
+.heading{
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #4f68f7;;
+}
+.ui-field-contain label select{
+  padding-left: 30px;
+}
+.sub-heading li a{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.colorheader{
+  width: 100%; 
+  height: 100px;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  background-color: red;
+}
+.colorheader h2{
+  color: #fff;
+  font-weight: 400;
+  left: 20px;
+  padding-left: 1.5em;
+  top: 1em;
+}
+.backbutton{
+  margin-left: 10px;
+  margin-top: 9px;
+  position: relative;
+}
+.select-setting{
+  float: right;
+}
+.flip2{
+  float: right;
+  padding: 10px;
+  margin-left: 300px;
+}
+.label-setting{
+  float: left;
+  margin-top: 10px;
+  position: relative;
+  font-family: 'Montserrat';
+  font-weight: thin;
+  font-size: 15px;
+}
+
+
+/*creat account page - setting*/
+
+.userimg{
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 190px;
+  height: 190px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.userimg img{
+  object-fit: cover;
+}
+.typeinfo{
+  float: right;
+  width: 100%;
+}
+
+
+
